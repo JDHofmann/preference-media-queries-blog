@@ -20,7 +20,7 @@ h1 {
     transition: 1s;
 }
 
-.day   { background: #eee; color: black; }
+/* .day   { background: #eee; color: black; }
 .night { background: #333; color: white; }
 
 
@@ -40,7 +40,7 @@ h1 {
   width: 7em;
   height: 2em;
   vertical-align: middle;
-}
+} */
 
 @keyframes example {
   0%   {background-color:#ff80ff}
