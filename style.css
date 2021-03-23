@@ -1,0 +1,67 @@
+* {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #008888;
+}
+
+@media (prefers-reduced-motion) {
+  * {
+    scroll-behavior: auto;
+  }
+}
+
+h1 {
+    background: #202020;
+    color: #ffffff;
+    padding: 5vh 0;
+    text-align: center;
+    transition: 1s;
+}
+
+.day   { background: #eee; color: black; }
+.night { background: #333; color: white; }
+
+
+@media (prefers-color-scheme: dark) {
+  .day.dark-scheme   { background:  #333; color: white; }
+  .night.dark-scheme { background: black; color:  #ddd; }
+}
+
+@media (prefers-color-scheme: light) {
+  .day.light-scheme   { background: white; color:  #555; }
+  .night.light-scheme { background:  #eee; color: black; }
+}
+
+.day, .night {
+  display: inline-block;
+  padding: 1em;
+  width: 7em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+@keyframes example {
+  0%   {background-color:#ff80ff}
+  25%  {background-color:#ffff80}
+  50%  {background-color:#ff8080}
+  75%  {background-color:#80ffff}
+  100% {background-color:#ff80ff}
+}
+
+div {
+  height: 90vh;
+  background-color:#ff00ff;
+  border: 1px solid;
+  margin: 5vh 5vw;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion) {
+  div {
+    animation: none;
+  }
+}
